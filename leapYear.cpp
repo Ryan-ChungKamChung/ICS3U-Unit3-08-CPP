@@ -11,25 +11,25 @@
 int main() {
     // Function figures out if an inputted year is a leap year
 
-    std::string leap_year_string;
-    int leap_year;
+    std::string leapYearString;
+    int leapYear;
 
     std::cout << "Give me a year number and I will tell you"
     "if it is a leap year" << std::endl;
 
     // Input
     std::cout << "Enter year: ";
-    std::cin >> leap_year_string;
+    std::cin >> leapYearString;
 
     // Process
     try {
-        leap_year = std::stoi(leap_year_string);
+        leapYear = std::stoi(leapYearString);
 
-        if (leap_year % 4 == 0) {
-            if (leap_year % 100 != 0) {
+        if (leapYear % 4 == 0) {
+            if (leapYear % 100 != 0) {
             std::cout << "This is a leap year" << std::endl;
             } else {
-                if (leap_year % 400 == 0) {
+                if (leapYear % 400 == 0) {
                     std::cout << "This is a leap year" << std::endl;
                 } else {
                     std::cout << "This is not a leap year" << std::endl;
